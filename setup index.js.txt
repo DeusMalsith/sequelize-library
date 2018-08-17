@@ -1,0 +1,6 @@
+1. Set up index.js
+	-Require stuff
+	-Set viewengine
+	-Add any use statments
+	-Set up home page route
+	-Listen to port 3000

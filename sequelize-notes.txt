@@ -1,0 +1,18 @@
+npm init
+install express, ejs, body-parser, express-ejs-layouts pg pg-hstore sequelize
+make index.js
+make static and views folders
+gitignore
+setup git
+create database
+change config.json
+    - credentials
+    - change to postgres
+    - change db name to new db
+sequelize model: create
+    - name book LOWERCASE AND SINGULAR
+    - attributes 
+        - title: string
+        - author: string
+        - pages: integer
+sequelize db:migrate:undo 
