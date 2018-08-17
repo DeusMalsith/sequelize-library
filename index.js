@@ -5,16 +5,18 @@ var ejsLayouts = require('express-ejs-layouts');
 
 // Global variables
 var app = express();
-var db = require('./models');
 
 // Set and use statements
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(ejsLayouts);
 
+// Include any controllers/routers
+app.use('/books', require('./controllers/books'));
+
 // Define routes
 app.get('/', function(req, res) {
-	res.send('stub for home page');
+	res.render('home');
 });
 
 
